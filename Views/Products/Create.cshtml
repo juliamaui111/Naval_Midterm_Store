@@ -1,0 +1,20 @@
+@model Naval_Midterm.Models.Product
+<h1>Add Product</h1>
+<form asp-action="Create" method="post">
+
+    <label>Name</label>
+    <input asp-for="Name" class="form-control" />
+
+    <label>Description</label>
+    <input asp-for="Description" class="form-control" />
+
+    <label>Price</label>
+    <input asp-for="Price" class="form-control" />
+
+    <label>Category</label>
+    <input asp-for="Category" class="form-control" />
+
+    <button type="submit" class="btn btn-primary mt-3">Save</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Back</a>
+
+</form>
